@@ -17,6 +17,9 @@
   font-weight: 300;
   margin: 0px 0px 10px 0px;
 }
+.footer__container a {
+  color: #FFFFFF;
+}
 
 body {
   font-family: Roboto;

@@ -11,7 +11,7 @@
     color: $black;
 }
 
-@mixin flex_center { 
+@mixin flex_center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@
     width: 218px;
     border-radius: 25px;
     border: 0px;
-    color:  $white;
+    color: $white;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -50,28 +50,33 @@
     opacity: 0.9;
     cursor: pointer;
     transition: .3s;
-    box-shadow: $shadow_button2;    
+    box-shadow: $shadow_button2;
 }
 
 @mixin hover_heart {
+    .fa-regular.fa-heart {
+        display: inline-flex;
+    }
+
+    .fa-solid.fa-heart {
+        display: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+
         .fa-regular.fa-heart {
-           display: inline-flex;
+            display: none;
         }
 
         .fa-solid.fa-heart {
-           display: none;
+            display: inline;
+            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+            background-clip: border-box;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: scale-in-bottom 0.5s linear both;
         }
-
-        &:hover {
-           cursor: pointer;
-
-           .fa-regular.fa-heart {
-              display: none;
-           }
-
-           .fa-solid.fa-heart {
-              display: inline;
-           }
-        }
-     }
-
+    }
+}
+  

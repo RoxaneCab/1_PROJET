@@ -271,6 +271,12 @@ a {
 }
 .restaurants .restaurants__card__info .restaurants__card__info--heart:hover .fa-solid.fa-heart {
   display: inline;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: scale-in-bottom 0.5s linear both;
 }
 .restaurants .restaurants__card__info .restaurants__card__info__text {
   display: flex;
