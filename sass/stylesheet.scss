@@ -1,0 +1,178 @@
+@import './color';
+@import './mixin';
+
+body {
+   @include body_default;
+}
+
+a {
+   @include a_default;
+}
+
+/* Header */
+.header__logo {
+   @include flex_center;
+   padding-top: 10px;
+   height: 63px;
+   box-shadow: $box-shadow1;
+   position: relative;
+   z-index: 1000;
+}
+
+.header__logo--img {
+   width: 197px;
+   height: auto;
+}
+
+
+/* Location */
+.location {
+   @include flex_center;
+   background-color: $greyhalf;
+
+   .location__icon {
+      width: 13px;
+      height: 17px;
+      padding-right: 10px;
+      padding-bottom: 3px;
+      color: $greydark;
+   }
+
+   .location__text {
+      font-size: 16px;
+      font-weight: $middle;
+      color: $greydark;
+   }
+}
+
+/* Intro */
+.intro {
+   @include flex_column-center;
+   background-color: $greylight;
+   padding: 40px;
+
+   .intro__title {
+      @include flex_center_simple;
+      font-size: $title;
+      font-weight: $large;
+      margin: 0px;
+   }
+
+   .intro__subtitle {
+      @include flex_center_simple;
+      font-size: 18px;
+      font-weight: $thin;
+      margin: 15px 0px 20px 0px;
+   }
+
+   .intro__button {
+      @include flex_center;
+      @include button;
+   }
+}
+
+/* Fonctionnement */
+.fonctionnement {
+   @include flex_column;
+   margin: 40px 20px 50px 20px;
+
+
+   .fonctionnement__title {
+      display: flex;
+      font-size: $title;
+      font-weight: $large;
+   }
+
+   .fonctionnement__card {
+      @include flex_center_simple;
+      width: 322px;
+      height: 73px;
+      background-color: $greylight;
+      border-radius: 20px;
+      border: 0px;
+      box-shadow: $shadow_button;
+      margin: 15px;
+
+
+      .fonctionnement__card--number {
+         @include flex_center;
+         align-self: center;
+         width: 25px;
+         height: 25px;
+         background-color: $purple;
+         font-size: 14px;
+         color: $white;
+         border-radius: 100px;
+         transform: translate(-15px);
+      }
+
+      .fonctionnement__card--icon {
+         @include flex_center;
+         margin: 15px;
+      }
+
+      .fonctionnement__card--text {
+         @include flex_center;
+         font-size: 16px;
+         font-weight: $middle;
+      }
+   }
+}
+
+/* Restaurant */
+.restaurants {
+   @include flex_column;
+   background-color: $greylight;
+   padding: 30px 0px;
+
+   .restaurants__title {
+      display: flex;
+      margin: $margin_default;
+   }
+
+   .restaurants__card {
+      @include flex_column;
+      height: 251px;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: $white;
+      margin: $margin_default;
+
+      .restaurants__card--img {
+         display: flex;
+         box-sizing: border-box;
+         object-fit: cover;
+         height: 180px;
+      }
+   }
+
+   .restaurants__card__info {
+      @include flex_center;
+      justify-content: space-between;
+      margin-left: 10px;
+
+      .restaurants__card__info--name {
+         display: inline-flex;
+         font-size: $name;
+         font-weight: $large;
+         margin: 15px 0px 0px 0px;
+      }
+
+      .restaurants__card__info--location {
+         display: inline-flex;
+         font-size: 17px;
+         font-weight: $thin;
+         margin: 2px 0px 0px 0px;
+      }
+
+      .restaurants__card__info--heart {
+         display: inline-flex;
+         font-size: $name;
+         margin: 10px 20px 0px 0px;
+      }
+   }
+
+   .restaurants__card__info__text {
+      @include flex_column;
+   }
+}

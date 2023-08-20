@@ -1,0 +1,19 @@
+/* FOOTER */
+.footer__container {
+  background-color: #353535;
+  padding: 15px 0px 20px 30px;
+  color: #FFFFFF;
+}
+.footer__container .footer__container--h1 {
+  font-family: Shrikhand, "cursive";
+  font-size: 24px !important;
+  font-weight: 200;
+}
+.footer__container .footer__container--h4 {
+  font-weight: 500;
+  margin: 0px 0px 10px 0px;
+}
+.footer__container .footer__container--p {
+  font-weight: 300;
+  margin: 0px 0px 10px 0px;
+}/*# sourceMappingURL=footer.css.map */

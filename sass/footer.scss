@@ -1,0 +1,27 @@
+@import './color';
+@import './mixin';
+
+
+ /* FOOTER */
+ .footer__container {
+    background-color: $greydark;
+    padding: 15px 0px 20px 30px;
+    color: $white;
+
+ .footer__container--h1 {
+    font-family: Shrikhand,"cursive";
+    font-size: $title;
+    // font-size: 22px;
+    font-weight: 200;
+ }
+
+ .footer__container--h4 {
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+}
+
+.footer__container--p {
+    font-weight: 300;
+    margin: 0px 0px 10px 0px;
+}
+}

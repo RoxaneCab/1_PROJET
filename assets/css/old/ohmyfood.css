@@ -12,7 +12,7 @@
  }
 
 
- /* HEADER */
+ /* HEADER
  .header__logo {
      display: flex;
      justify-content: center;
@@ -27,10 +27,10 @@
  .header__logo--img {
      width: 197px;
      height: auto;
- }
+ } */
 
  /* Location */
- .location {
+ /* .location {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -49,14 +49,14 @@
      font-size: 16px;
      font-weight: 500;
      color: #353535;
- }
+ } */
 
 
  /* MAIN */
 
  /* Intro */
- .intro {
-     display: flex;
+ /*.intro {
+      display: flex;
      flex-direction: column;
      align-items: center;
      background-color: #F6F6F6;
@@ -93,12 +93,12 @@
      font-weight: 500;
      margin-bottom: 15px;
      box-shadow: 0px 4px 10px 0px #00000040;
- }
+ } */
 
 
  /* FONCTIONNEMENT */
 
- .fonctionnement {
+ /* .fonctionnement {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -145,11 +145,11 @@
     display: flex;
     font-size: 16px;
     font-weight: 500;
- }
+ } */
 
  /* RESTAURANT */
 
- .restaurants {
+ /* .restaurants {
     display: flex;
     flex-direction: column;
     background-color: #F6F6F6;
@@ -210,10 +210,10 @@
     font-size: 18px;
     margin: 10px 20px 0px 0px;
  }
-
+ */
 
  /* FOOTER */
-
+/* 
  .footer__container {
     background-color: #353535;
     padding: 15px 0px 20px 30px;
@@ -235,4 +235,4 @@
     font-weight: 300;
     margin: 0px 0px 10px 0px;
 }
-
+ */

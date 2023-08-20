@@ -1,0 +1,247 @@
+@import './color';
+@import './mixin';
+@import './footer.scss';
+
+body {
+    @include body_default;
+}
+
+a {
+    @include a_default;
+}
+
+/* Header */
+.header__logo {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    height: 63px;
+    box-shadow: $box-shadow1;
+    position: relative;
+    z-index: 1000;
+}
+
+.header__logo--icon {
+    padding-left: 20px;
+    display: inline;
+    font-size: 17px;
+}
+
+.header__logo--img {
+    transform: translate(-20px);
+    margin: auto;
+    width: 197px;
+    height: auto;
+}
+
+/* Image */
+.header_image {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border-radius: 50px 50px 0px 0px;
+    z-index: 100;
+    transform: translate(0px, -30px);
+    padding: 20px;
+
+    .menu__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu__header--h1 {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        .menu__header--icon {
+            margin-right: 20px;
+            font-size: 24px;
+        }
+    }
+}
+
+/* Entrees */
+.entrees {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+
+    .entrees__title {
+        display: flex;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 10px 0px 0px 0px !important;
+        border-bottom: 3px solid #a9e0d1;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .entrees__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px #00000026;
+    }
+
+    .entrees__card__text {
+        display: flex;
+        flex-direction: column;
+
+        .entrees__card--plat {
+            display: inline-flex;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .entrees__card--description {
+            display: inline-flex;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .entrees__card--price {
+            display: flex;
+            align-self: flex-end;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px 0px 15px 0px;
+        }
+    }
+}
+
+/* PLATS */
+.plats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+
+    .plats__title {
+        display: flex;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 20px 0px 0px 0px !important;
+        border-bottom: 3px solid #a9e0d1;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .plats__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px #00000026;
+    }
+
+    .plats__card__text {
+        display: flex;
+        flex-direction: column;
+
+        .plats__card--plat {
+            display: inline-flex;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .plats__card--description {
+            display: inline-flex;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .plats__card--price {
+            display: flex;
+            align-self: flex-end;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px 0px 15px 0px;
+        }
+    }
+}
+
+/* DESSERTS */
+.desserts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+
+    .desserts__title {
+        display: flex;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 20px 0px 0px 0px !important;
+        border-bottom: 3px solid #a9e0d1;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .desserts__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px #00000026;
+    }
+
+    .desserts__card__text {
+        display: flex;
+        flex-direction: column;
+
+        .desserts__card--plat {
+            display: inline-flex;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .desserts__card--description {
+            display: inline-flex;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .desserts__card--price {
+            display: flex;
+            align-self: flex-end;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px 0px 15px 0px;
+        }
+    }
+}
+
+.intro__button {
+    align-self: center;
+    margin: 60px;
+    @include button;
+}
