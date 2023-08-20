@@ -87,6 +87,27 @@ a {
   margin-right: 20px;
   font-size: 24px;
 }
+.menu .menu__header .menu__header--icon .fa-regular.fa-heart {
+  display: inline-flex;
+}
+.menu .menu__header .menu__header--icon .fa-solid.fa-heart {
+  display: none;
+}
+.menu .menu__header .menu__header--icon:hover {
+  cursor: pointer;
+}
+.menu .menu__header .menu__header--icon:hover .fa-regular.fa-heart {
+  display: none;
+}
+.menu .menu__header .menu__header--icon:hover .fa-solid.fa-heart {
+  display: inline;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: scale-in-bottom 0.5s linear both;
+}
 
 /* Entrees */
 .entrees {
