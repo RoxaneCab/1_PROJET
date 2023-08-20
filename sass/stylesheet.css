@@ -8,6 +8,57 @@ a {
   color: #000000;
 }
 
+/* Loader */
+.loader {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: loader_bckg 1.5s linear;
+  visibility: hidden;
+}
+.loader__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Shrikhand, "cursive";
+  color: black;
+  text-shadow: 4px 4px 2px rgba(147, 86, 220, 0.6);
+  font-size: 50px;
+  margin-top: 200px;
+  animation: text_expand 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes loader_bckg {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes text_expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Header */
 .header__logo {
   display: flex;
@@ -17,7 +68,7 @@ a {
   height: 63px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .header__logo--img {
@@ -82,6 +133,12 @@ a {
   margin-bottom: 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
+.intro .intro__button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.5019607843);
+}
 
 /* Fonctionnement */
 .fonctionnement {
@@ -97,13 +154,25 @@ a {
 .fonctionnement .fonctionnement__card {
   display: flex;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 322px;
   height: 73px;
   background-color: #F6F6F6;
   border-radius: 20px;
   border: 0px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  margin: 15px;
+}
+.fonctionnement .fonctionnement__card:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.5019607843);
+}
+.fonctionnement .fonctionnement__card:hover i {
+  color: #9356DC;
 }
 .fonctionnement .fonctionnement__card .fonctionnement__card--number {
   display: flex;
@@ -152,6 +221,12 @@ a {
   background-color: #FFFFFF;
   margin: 20px;
 }
+.restaurants .restaurants__card:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.5019607843);
+}
 .restaurants .restaurants__card .restaurants__card--img {
   display: flex;
   box-sizing: border-box;
@@ -179,11 +254,25 @@ a {
   margin: 2px 0px 0px 0px;
 }
 .restaurants .restaurants__card__info .restaurants__card__info--heart {
-  display: inline-flex;
   font-size: 18px;
   margin: 10px 20px 0px 0px;
 }
-.restaurants .restaurants__card__info__text {
+.restaurants .restaurants__card__info .restaurants__card__info--heart .fa-regular.fa-heart {
+  display: inline-flex;
+}
+.restaurants .restaurants__card__info .restaurants__card__info--heart .fa-solid.fa-heart {
+  display: none;
+}
+.restaurants .restaurants__card__info .restaurants__card__info--heart:hover {
+  cursor: pointer;
+}
+.restaurants .restaurants__card__info .restaurants__card__info--heart:hover .fa-regular.fa-heart {
+  display: none;
+}
+.restaurants .restaurants__card__info .restaurants__card__info--heart:hover .fa-solid.fa-heart {
+  display: inline;
+}
+.restaurants .restaurants__card__info .restaurants__card__info__text {
   display: flex;
   flex-direction: column;
 }/*# sourceMappingURL=stylesheet.css.map */

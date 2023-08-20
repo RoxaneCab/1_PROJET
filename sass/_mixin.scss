@@ -45,3 +45,33 @@
     margin-bottom: 15px;
     box-shadow: $shadow_button;
 }
+
+@mixin button-hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: $shadow_button2;    
+}
+
+@mixin hover_heart {
+        .fa-regular.fa-heart {
+           display: inline-flex;
+        }
+
+        .fa-solid.fa-heart {
+           display: none;
+        }
+
+        &:hover {
+           cursor: pointer;
+
+           .fa-regular.fa-heart {
+              display: none;
+           }
+
+           .fa-solid.fa-heart {
+              display: inline;
+           }
+        }
+     }
+
