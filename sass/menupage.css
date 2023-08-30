@@ -111,13 +111,13 @@ a {
 }
 
 /* Entrees */
-.entrees {
+.section {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   gap: 20px;
 }
-.entrees .entrees__title {
+.section__title {
   display: flex;
   font-family: Roboto;
   font-size: 16px;
@@ -127,7 +127,7 @@ a {
   padding-bottom: 5px;
   width: 40px;
 }
-.entrees .entrees__card {
+.section__card {
   display: flex;
   justify-content: space-between;
   height: 72px;
@@ -138,39 +138,42 @@ a {
   animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
-.entrees .entrees__card:hover .entrees__card--check {
+.section__card:hover .section__card__box--check {
   margin-right: 0;
 }
-.entrees .entrees__card__text {
+.section__card__text {
   display: flex;
   flex-direction: column;
   margin-top: 9px;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.entrees .entrees__card__text .entrees__card--plat {
+.section__card__text--plat {
   font-size: 18px;
   font-weight: 500;
   margin: 5px 0px 0px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.entrees .entrees__card__text .entrees__card--description {
+.section__card__text--description {
   font-size: 15px;
   font-weight: 300;
   margin: 5px 0px 0px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.entrees .entrees__card__price {
+.section__card__box {
   display: flex;
 }
-.entrees .entrees__card__price .entrees__card--price {
+.section__card__box--price {
   display: flex;
   align-items: flex-end;
   font-size: 17px;
   font-weight: 500;
   margin-right: 15px;
 }
-.entrees .entrees__card__price .entrees__card--check {
+.section__card__box--check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,110 +185,121 @@ a {
   transition: all 0.5s;
 }
 
-/* PLATS */
+/* PLATS 
 .plats {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  gap: 20px;
-}
-.plats .plats__title {
-  display: flex;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 20px 0px 0px 0px !important;
-  border-bottom: 3px solid #a9e0d1;
-  padding-bottom: 5px;
-  width: 40px;
-}
-.plats .plats__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
-  padding: 0px 15px;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
-}
-.plats .plats__card__text {
-  display: flex;
-  flex-direction: column;
-}
-.plats .plats__card__text .plats__card--plat {
-  display: inline-flex;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 5px 0px 0px 0px;
-}
-.plats .plats__card__text .plats__card--description {
-  display: inline-flex;
-  font-size: 15px;
-  font-weight: 300;
-  margin: 5px 0px 0px 0px;
-}
-.plats .plats__card__text .plats__card--price {
-  display: flex;
-  align-self: flex-end;
-  font-size: 17px;
-  font-weight: 500;
-  margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+
+    .plats__title {
+        display: flex;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 20px 0px 0px 0px !important;
+        border-bottom: 3px solid #a9e0d1;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .plats__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    }
+
+    .plats__card__text {
+        display: flex;
+        flex-direction: column;
+
+        .plats__card--plat {
+            display: inline-flex;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .plats__card--description {
+            display: inline-flex;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .plats__card--price {
+            display: flex;
+            align-self: flex-end;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px 0px 15px 0px;
+        }
+    }
 }
 
-/* DESSERTS */
+/* DESSERTS 
 .desserts {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  gap: 20px;
-}
-.desserts .desserts__title {
-  display: flex;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 20px 0px 0px 0px !important;
-  border-bottom: 3px solid #a9e0d1;
-  padding-bottom: 5px;
-  width: 40px;
-}
-.desserts .desserts__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
-  padding: 0px 15px;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-}
-.desserts .desserts__card__text {
-  display: flex;
-  flex-direction: column;
-}
-.desserts .desserts__card__text .desserts__card--plat {
-  display: inline-flex;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 5px 0px 0px 0px;
-}
-.desserts .desserts__card__text .desserts__card--description {
-  display: inline-flex;
-  font-size: 15px;
-  font-weight: 300;
-  margin: 5px 0px 0px 0px;
-}
-.desserts .desserts__card__text .desserts__card--price {
-  display: flex;
-  align-self: flex-end;
-  font-size: 17px;
-  font-weight: 500;
-  margin: 0px 0px 15px 0px;
-}
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
 
+    .desserts__title {
+        display: flex;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 20px 0px 0px 0px !important;
+        border-bottom: 3px solid #a9e0d1;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .desserts__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+    }
+
+    .desserts__card__text {
+        display: flex;
+        flex-direction: column;
+
+        .desserts__card--plat {
+            display: inline-flex;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .desserts__card--description {
+            display: inline-flex;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .desserts__card--price {
+            display: flex;
+            align-self: flex-end;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px 0px 15px 0px;
+        }
+    }
+}*/
 .intro__button {
   align-self: center;
   margin: 60px;

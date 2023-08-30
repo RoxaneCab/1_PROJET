@@ -72,13 +72,13 @@ a {
 }
 
 /* Entrees */
-.entrees {
+.section {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     gap: 20px;
 
-    .entrees__title {
+    &__title {
         display: flex;
         font-family: Roboto;
         font-size: 16px;
@@ -89,7 +89,7 @@ a {
         width: 40px;
     }
 
-    .entrees__card {
+    &__card {
         display: flex;
         justify-content: space-between;
         height: 72px;
@@ -101,37 +101,43 @@ a {
         animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        // text-overflow: ellipsis;
 
-        &:hover .entrees__card--check {
+        &:hover &__box--check {
             margin-right: 0;
         }
     }
 
-    .entrees__card__text {
+    &__card__text {
         display: flex;
         flex-direction: column;
         margin-top: 9px;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        overflow: hidden;
+        // text-overflow: ellipsis;
 
-        .entrees__card--plat {
+        &--plat {
             font-size: 18px;
             font-weight: 500;
             margin: 5px 0px 0px 0px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
         }
 
-        .entrees__card--description {
+        &--description {
             font-size: 15px;
             font-weight: 300;
             margin: 5px 0px 0px 0px;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 
-    .entrees__card__price {
+    &__card__box {
         display: flex;
 
-        .entrees__card--price {
+        &--price {
             display: flex;
             align-items: flex-end;
             font-size: 17px;
@@ -140,7 +146,7 @@ a {
             margin-right: 15px;
         }
 
-        .entrees__card--check {
+        &--check {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -154,7 +160,7 @@ a {
     }
 }
 
-/* PLATS */
+/* PLATS 
 .plats {
     display: flex;
     flex-direction: column;
@@ -212,7 +218,7 @@ a {
     }
 }
 
-/* DESSERTS */
+/* DESSERTS 
 .desserts {
     display: flex;
     flex-direction: column;
@@ -268,7 +274,7 @@ a {
             margin: 0px 0px 15px 0px;
         }
     }
-}
+}*/
 
 .intro__button {
     align-self: center;
