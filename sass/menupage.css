@@ -88,25 +88,26 @@ a {
   font-size: 24px;
 }
 .menu .menu__header .menu__header--icon .fa-regular.fa-heart {
-  display: inline-flex;
+  display: flex;
 }
-.menu .menu__header .menu__header--icon .fa-solid.fa-heart {
-  display: none;
+.menu .menu__header .menu__header--icon .fa-solid {
+  display: flex;
+  opacity: 0;
+  transition: all 350ms ease-in-out;
 }
 .menu .menu__header .menu__header--icon:hover {
   cursor: pointer;
 }
 .menu .menu__header .menu__header--icon:hover .fa-regular.fa-heart {
-  display: none;
+  opacity: 0;
 }
 .menu .menu__header .menu__header--icon:hover .fa-solid.fa-heart {
   display: inline;
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  background-clip: border-box;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: scale-in-bottom 0.5s linear both;
+  opacity: 1;
 }
 
 /* Entrees */
@@ -129,7 +130,6 @@ a {
 .entrees .entrees__card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 72px;
   padding: 0px 15px;
   border-radius: 15px;
@@ -140,25 +140,24 @@ a {
 .entrees .entrees__card__text {
   display: flex;
   flex-direction: column;
+  margin-top: 9px;
 }
 .entrees .entrees__card__text .entrees__card--plat {
-  display: inline-flex;
   font-size: 18px;
   font-weight: 500;
   margin: 5px 0px 0px 0px;
 }
 .entrees .entrees__card__text .entrees__card--description {
-  display: inline-flex;
   font-size: 15px;
   font-weight: 300;
   margin: 5px 0px 0px 0px;
 }
-.entrees .entrees__card__text .entrees__card--price {
+.entrees .entrees__card--price {
   display: flex;
-  align-self: flex-end;
   font-size: 17px;
   font-weight: 500;
-  margin: 0px 0px 15px 0px;
+  align-items: flex-end;
+  margin-bottom: 12px;
 }
 
 /* PLATS */

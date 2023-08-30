@@ -92,7 +92,6 @@ a {
     .entrees__card {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         height: 72px;
         padding: 0px 15px;
         border-radius: 15px;
@@ -104,29 +103,35 @@ a {
     .entrees__card__text {
         display: flex;
         flex-direction: column;
+        margin-top: 9px;
 
         .entrees__card--plat {
-            display: inline-flex;
             font-size: 18px;
             font-weight: 500;
             margin: 5px 0px 0px 0px;
         }
 
         .entrees__card--description {
-            display: inline-flex;
             font-size: 15px;
             font-weight: 300;
             margin: 5px 0px 0px 0px;
         }
 
-        .entrees__card--price {
-            display: flex;
-            align-self: flex-end;
-            font-size: 17px;
-            font-weight: 500;
-            margin: 0px 0px 15px 0px;
-        }
+        // .entrees__card--check {
+        //     display: flex;
+        //     background-color: $greenlight;
+        //     color: $greendark;
+        // }
     }
+
+    .entrees__card--price {
+        display: flex;
+        font-size: 17px;
+        font-weight: 500;
+        align-items: flex-end;
+        margin-bottom: 12px;
+    }
+
 }
 
 /* PLATS */

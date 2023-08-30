@@ -55,28 +55,35 @@
 
 @mixin hover_heart {
     .fa-regular.fa-heart {
-        display: inline-flex;
+        display: flex;
     }
 
-    .fa-solid.fa-heart {
-        display: none;
+    .fa-solid {
+        display: flex;
+        opacity: 0;
+        transition: all 350ms ease-in-out;
     }
 
     &:hover {
         cursor: pointer;
 
         .fa-regular.fa-heart {
-            display: none;
+            // display: none;
+            opacity: 0;
         }
 
         .fa-solid.fa-heart {
             display: inline;
-            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-            background-clip: border-box;
+            color: transparent;
+            background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
             background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: scale-in-bottom 0.5s linear both;
+            opacity: 1;
+
+            // background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+            // background-clip: border-box;
+            // background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // animation: scale-in-bottom 0.5s linear both;
         }
     }
 }
-  
