@@ -105,7 +105,7 @@ a {
 .intro {
    @include flex_column-center;
    background-color: $greylight;
-   padding: 40px;
+   padding: 40px 40px 60px 40px;
 
    .intro__title {
       @include flex_center_simple;
@@ -269,3 +269,17 @@ a {
       }
    }
 }
+
+/* MEDIA QUERIES */
+
+// @media screen and (min-width: 1100px) {
+//    .fonctionnement {
+//       display: flex;
+//       flex-direction: row;
+
+//       &__title {
+//          align-self: center;
+//       }
+//    }
+
+// }

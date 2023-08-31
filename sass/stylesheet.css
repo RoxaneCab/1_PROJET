@@ -102,7 +102,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #F6F6F6;
-  padding: 40px;
+  padding: 40px 40px 60px 40px;
 }
 .intro .intro__title {
   display: flex;
@@ -130,7 +130,6 @@ a {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .intro .intro__button:hover {
@@ -297,4 +296,6 @@ a {
 .restaurants .restaurants__card__info .restaurants__card__info__text {
   display: flex;
   flex-direction: column;
-}/*# sourceMappingURL=stylesheet.css.map */
+}
+
+/* MEDIA QUERIES *//*# sourceMappingURL=stylesheet.css.map */
