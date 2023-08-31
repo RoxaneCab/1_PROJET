@@ -1,3 +1,11 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: Roboto;
   margin: 0;
@@ -274,10 +282,12 @@ a {
 .restaurants .restaurants__card__info .restaurants__card__info--heart .fa-regular.fa-heart {
   display: flex;
 }
-.restaurants .restaurants__card__info .restaurants__card__info--heart .fa-solid {
+.restaurants .restaurants__card__info .restaurants__card__info--heart .fa-solid.fa-heart {
   display: flex;
   opacity: 0;
-  transition: all 350ms ease-in-out;
+  background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .restaurants .restaurants__card__info .restaurants__card__info--heart:hover {
   cursor: pointer;
@@ -288,10 +298,8 @@ a {
 .restaurants .restaurants__card__info .restaurants__card__info--heart:hover .fa-solid.fa-heart {
   display: inline;
   color: transparent;
-  background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
   opacity: 1;
+  animation: fade-in 350ms ease-in-out;
 }
 .restaurants .restaurants__card__info .restaurants__card__info__text {
   display: flex;

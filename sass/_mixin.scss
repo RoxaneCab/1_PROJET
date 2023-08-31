@@ -57,10 +57,12 @@
         display: flex;
     }
 
-    .fa-solid {
+    .fa-solid.fa-heart{
         display: flex;
         opacity: 0;
-        transition: all 350ms ease-in-out;
+        background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+        background-clip: text;
+        // transition: all 350ms ease-in-out;
     }
 
     &:hover {
@@ -74,9 +76,8 @@
         .fa-solid.fa-heart {
             display: inline;
             color: transparent;
-            background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-            background-clip: text;
             opacity: 1;
+            animation: fade-in 350ms ease-in-out;
 
             // background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
             // background-clip: border-box;
@@ -87,3 +88,12 @@
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
