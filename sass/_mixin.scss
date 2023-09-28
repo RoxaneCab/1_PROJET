@@ -62,14 +62,12 @@
         opacity: 0;
         background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
         background-clip: text;
-        // transition: all 350ms ease-in-out;
     }
 
     &:hover {
         cursor: pointer;
 
         .fa-regular.fa-heart {
-            // display: none;
             opacity: 0;
         }
 
@@ -78,7 +76,6 @@
             color: transparent;
             opacity: 1;
             animation: fade-in 350ms ease-in-out;
-
             // background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
             // background-clip: border-box;
             // background-clip: text;
