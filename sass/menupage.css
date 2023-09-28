@@ -42,7 +42,6 @@
   .footer__container {
     display: flex;
     flex-direction: row-reverse;
-    margin: none;
     align-items: center;
     gap: 25px;
   }

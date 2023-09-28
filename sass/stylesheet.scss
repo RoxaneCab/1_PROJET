@@ -90,15 +90,25 @@ a {
    .location__icon {
       width: 13px;
       height: 17px;
-      padding-right: 10px;
-      padding-bottom: 3px;
+      // padding-right: 10px;
+      // padding-bottom: 3px;
+      padding: 0px 0px 0px 30px;
       color: $greydark;
    }
 
-   .location__text {
+   .location__input {
+      background-color: $greyhalf;
+      border: 0;
+      outline: 0;
+      padding: 15px 0px 15px 15px;
+   }
+
+   .location__input::placeholder {
+      font-family: Roboto;
       font-size: 16px;
       font-weight: $middle;
       color: $greydark;
+      opacity: 1;
    }
 }
 
@@ -233,7 +243,7 @@ a {
          right: 5%;
          text-align: center !important;
          padding-top: 5px;
-         padding-bottom: 5px ;
+         padding-bottom: 5px;
          width: 80px;
          background-color: $greenlight;
          color: $greendark;

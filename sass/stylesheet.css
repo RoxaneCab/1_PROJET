@@ -42,7 +42,6 @@
   .footer__container {
     display: flex;
     flex-direction: row-reverse;
-    margin: none;
     align-items: center;
     gap: 25px;
   }
@@ -144,14 +143,28 @@ a {
 .location .location__icon {
   width: 13px;
   height: 17px;
-  padding-right: 10px;
-  padding-bottom: 3px;
+  padding: 0px 0px 0px 30px;
   color: #353535;
 }
-.location .location__text {
+.location .location__input {
+  background-color: #EAEAEA;
+  border: 0;
+  outline: 0;
+  padding: 15px 0px 15px 15px;
+}
+.location .location__input::-moz-placeholder {
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   color: #353535;
+  opacity: 1;
+}
+.location .location__input::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+  opacity: 1;
 }
 
 /* Intro */
