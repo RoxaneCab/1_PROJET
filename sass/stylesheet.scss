@@ -10,7 +10,7 @@ a {
    @include a_default;
 }
 
-/* Loader */
+/* LOADER */
 .loader {
    height: 100%;
    background: white;
@@ -66,7 +66,7 @@ a {
    }
 }
 
-/* Header */
+/* HEADER */
 .header__logo {
    @include flex_center;
    padding-top: 10px;
@@ -90,8 +90,6 @@ a {
    .location__icon {
       width: 13px;
       height: 17px;
-      // padding-right: 10px;
-      // padding-bottom: 3px;
       padding: 0px 0px 0px 30px;
       color: $greydark;
    }
@@ -130,7 +128,6 @@ a {
       font-size: 18px;
       font-weight: $thin;
       margin: 15px 0px 20px 0px;
-      // Voir comment faire tenir le texte en une ligne
    }
 
    .intro__button {
